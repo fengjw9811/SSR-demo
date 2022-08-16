@@ -1,5 +1,4 @@
 const path = require('path')
-const webpackExternals = require('webpack-node-externals')
 
 module.exports = {
   target: 'web',
@@ -17,6 +16,5 @@ module.exports = {
         exclude: '/node_modules/'
       }
     ]
-  },
-  externals: [webpackExternals()]
+  }
 }

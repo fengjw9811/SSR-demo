@@ -12,10 +12,21 @@ const RoutesList = () => {
         </ul>
         <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route path='/' element={<Personal />} />
+            <Route path='personal' element={<Personal />} />
         </Routes>
     </div>
   )
 }
+
+export const routesConfig = [
+  {
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/personal',
+    component: Personal
+  }
+]
 
 export default RoutesList
